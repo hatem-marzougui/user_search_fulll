@@ -17,7 +17,7 @@ exports[`matches snapshot 1`] = `
     >
       <input
         class="search-input"
-        placeholder="Rechercher..."
+        placeholder="Search..."
         type="search"
         value=""
       />
