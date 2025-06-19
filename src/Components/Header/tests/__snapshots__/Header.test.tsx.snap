@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component matches snapshot 1`] = `
+<div>
+  <div
+    class="headerContainer"
+  >
+    <b>
+      Github Search
+    </b>
+  </div>
+</div>
+`;

@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsersList matches snapshot 1`] = `
+<div>
+  <div
+    class="search-container"
+  >
+    <input
+      class="search-input"
+      placeholder="Rechercher..."
+      type="search"
+      value=""
+    />
+  </div>
+  <div
+    class="control-div"
+  >
+    <div
+      class="users-count"
+    >
+      <img
+        alt="liste"
+        class="icon"
+        height="24"
+        src="/icons/list.svg"
+        width="24"
+      />
+      <span>
+        0
+         
+        elements selected
+      </span>
+    </div>
+    <div
+      class="controls-buttons"
+    >
+      <label
+        class="switch"
+      >
+        <input
+          type="checkbox"
+        />
+        <span
+          class="slider round"
+        />
+      </label>
+      <span>
+        Edit Mode
+         
+      </span>
+    </div>
+  </div>
+  <div
+    class="users-list-container"
+    data-testid="users-list"
+  >
+    <div
+      class="user-card"
+    >
+      <img
+        alt="Avatar"
+        class="avatar"
+        src="https://example.com/avatar.jpg"
+      />
+      <h6>
+        ID: 
+        1
+      </h6>
+      <h6>
+        Login
+        : 
+        hatem
+      </h6>
+      <button
+        class="viewProfile_button"
+      >
+        View Profile
+      </button>
+    </div>
+  </div>
+</div>
+`;

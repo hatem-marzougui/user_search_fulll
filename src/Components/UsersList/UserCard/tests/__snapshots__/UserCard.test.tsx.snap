@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserCard matches snapshot 1`] = `
+<div>
+  <div
+    class="user-card"
+  >
+    <input
+      checked=""
+      class="checkbox"
+      type="checkbox"
+      value="123"
+    />
+    <img
+      alt="Avatar"
+      class="avatar"
+      src="https://avatars.githubusercontent.com/u/123456?v=4"
+    />
+    <h6>
+      ID: 
+      123
+    </h6>
+    <h6>
+      Login
+      : 
+      hatem
+    </h6>
+    <button
+      class="viewProfile_button"
+    >
+      View Profile
+    </button>
+  </div>
+</div>
+`;

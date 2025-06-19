@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="headerContainer"
+    >
+      <b>
+        Github Search
+      </b>
+    </div>
+    <div
+      class="search-container"
+    >
+      <input
+        class="search-input"
+        placeholder="Rechercher..."
+        type="search"
+        value=""
+      />
+    </div>
+    <div
+      class="control-div"
+    >
+      <div
+        class="users-count"
+      >
+        <img
+          alt="liste"
+          class="icon"
+          height="24"
+          src="/icons/list.svg"
+          width="24"
+        />
+        <span>
+          0
+           
+          elements selected
+        </span>
+      </div>
+      <div
+        class="controls-buttons"
+      />
+    </div>
+    <div
+      class="users-list-container"
+      data-testid="users-list"
+    >
+      <div
+        class="message"
+      >
+        Please enter a search query
+      </div>
+    </div>
+  </div>
+</div>
+`;

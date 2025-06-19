@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component matches snapshot 1`] = `
+<div>
+  <div
+    class="search-container"
+  >
+    <input
+      class="search-input"
+      placeholder="Rechercher..."
+      type="search"
+      value=""
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListControls simple test matches snapshot 1`] = `
+<div>
+  <div
+    class="control-div"
+  >
+    <div
+      class="users-count"
+    >
+      <img
+        alt="liste"
+        class="icon"
+        height="24"
+        src="/icons/list.svg"
+        width="24"
+      />
+      <span>
+        0
+         
+        elements selected
+      </span>
+    </div>
+    <div
+      class="controls-buttons"
+    >
+      <label
+        class="switch"
+      >
+        <input
+          checked=""
+          type="checkbox"
+        />
+        <span
+          class="slider round"
+        />
+      </label>
+      <span>
+        Edit Mode
+         
+      </span>
+    </div>
+  </div>
+</div>
+`;
