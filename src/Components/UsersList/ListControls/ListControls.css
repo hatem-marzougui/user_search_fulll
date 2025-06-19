@@ -103,3 +103,9 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
 }
+/* 📱 Jusqu’à 480px — hide text number of elements selected */
+@media (max-width: 480px) {
+  .users-count {
+    display: none;
+  }
+}
