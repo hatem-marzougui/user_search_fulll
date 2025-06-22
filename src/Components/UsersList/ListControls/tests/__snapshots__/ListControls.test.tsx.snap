@@ -6,23 +6,7 @@ exports[`ListControls simple test matches snapshot 1`] = `
     class="control-div"
   >
     <div
-      class="users-count"
-    >
-      <img
-        alt="liste"
-        class="icon"
-        height="24"
-        src="/icons/list.svg"
-        width="24"
-      />
-      <span>
-        0
-         
-        elements selected
-      </span>
-    </div>
-    <div
-      class="controls-buttons"
+      class="edit-mode-toggle"
     >
       <label
         class="switch"

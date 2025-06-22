@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+
 import { getUsers } from "../../api/usersApi";
 import { debounce } from "../../utils/debounce";
 import {
@@ -42,8 +43,7 @@ export const useUsersList = () => {
   const debouncedFetchUsers = useMemo(() => debounce(fetchUsers, 300), []);
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
-    debouncedFetchUsers(e.target.value); // Debounce the search function
-    // fetchUsers(e.target.value);
+    debouncedFetchUsers(e.target.value);
     setSelectedItems([]); // Reset selected items on new search
   };
   const handleToggleSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -75,7 +75,6 @@ export const useUsersList = () => {
         id: Math.random(),
       }));
     setGithubUsers([...duplicatedUsers, ...githubUsers]);
-    //   setSelectedItems([]); // Reset selected items after duplication
   };
 
   const handleEditMode = () => {

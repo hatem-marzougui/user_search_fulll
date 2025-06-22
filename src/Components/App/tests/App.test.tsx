@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import App from "./App";
-import { HEADER_TITLE, SEARCH_PLACEHOLDER } from "./Constants";
+import App from "../App";
+import { HEADER_TITLE, SEARCH_PLACEHOLDER } from "../../../Constants";
 
 test("App must renders header", () => {
   render(<App />);

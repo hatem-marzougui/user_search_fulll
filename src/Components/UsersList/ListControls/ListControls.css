@@ -97,8 +97,14 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+.edit-mode-toggle {
+  position: absolute;
+  right: 2rem;
+}
 
 .controls-buttons {
+  position: absolute;
+  right: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;

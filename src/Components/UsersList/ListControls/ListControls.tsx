@@ -22,57 +22,50 @@ const ListControls = ({
 }: ListControlsProps) => {
   return (
     <div className="control-div">
-      <div className="users-count">
-        <img
-          className="icon"
-          src="/icons/list.svg"
-          alt="liste"
-          width={24}
-          height={24}
-        />
-        <span>
-          {selectedItems.length} {ELEMENT_SELECTED}
-        </span>
-      </div>
-      {
-        <div className="controls-buttons">
-          {selectedItems.length > 0 && (
+      {selectedItems.length > 0 && (
+        <>
+          <div className="users-count">
+            <img
+              className="icon"
+              src="/icons/list.svg"
+              alt="liste"
+              width={24}
+              height={24}
+            />
+            <span>
+              {selectedItems.length} {ELEMENT_SELECTED}
+            </span>
+          </div>
+
+          <div className="controls-buttons">
             <>
               <button className="icon-button" onClick={handleDuplicateUsers}>
                 <img
                   className="icon"
                   src="/icons/duplicate.svg"
                   alt="duplicate"
-                  width={24}
-                  height={24}
                 />
               </button>
               <button className="icon-button" onClick={handleDeleteUsers}>
-                <img
-                  className="icon"
-                  src="/icons/delete.svg"
-                  alt="delete"
-                  width={24}
-                  height={24}
-                />
+                <img className="icon" src="/icons/delete.svg" alt="delete" />
               </button>
             </>
-          )}
-          {githubUsers.length > 0 && (
-            <>
-              <label className="switch">
-                <input
-                  type="checkbox"
-                  checked={editMode}
-                  onChange={handleEditMode}
-                />
-                <span className="slider round"></span>
-              </label>
-              <span>{EDIT_MODE} </span>
-            </>
-          )}
+          </div>
+        </>
+      )}
+      {githubUsers.length > 0 && (
+        <div className="edit-mode-toggle">
+          <label className="switch">
+            <input
+              type="checkbox"
+              checked={editMode}
+              onChange={handleEditMode}
+            />
+            <span className="slider round"></span>
+          </label>
+          <span>{EDIT_MODE} </span>
         </div>
-      }
+      )}
     </div>
   );
 };
