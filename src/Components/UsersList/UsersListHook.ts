@@ -9,7 +9,26 @@ import {
 } from "../../Constants";
 import { User } from "../../types/user";
 
-export const useUsersList = () => {
+interface UseUsersListHandlers {
+  handleSearch: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleToggleSelect: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleDeleteUsers: () => void;
+  handleDuplicateUsers: () => void;
+  handleSelectAllUsers: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleEditMode: () => void;
+}
+
+interface UseUsersListReturn {
+  githubUsers: User[];
+  searchQuery: string;
+  editMode: boolean;
+  selectedItems: string[];
+  error: string | null;
+  loading: boolean;
+  handlers: UseUsersListHandlers;
+}
+
+export const useUsersList = (): UseUsersListReturn => {
   const [githubUsers, setGithubUsers] = useState<User[]>([]);
   const [selectedItems, setSelectedItems] = useState<string[]>([]);
   const [editMode, setEditMode] = useState<boolean>(false);
